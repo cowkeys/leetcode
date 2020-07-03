@@ -61,5 +61,33 @@ func main() {
 		fmt.Println(handle.FindMedianSortedArrays([]int{1, 3, 5}, []int{100, 200}) == 5)
 
 		fmt.Println(handle.FindMedianSortedArrays([]int{1, 2}, []int{1, 2}) == 1.5)
+	case "5":
+
+		/* fmt.Println(handle.LongestPalindrome("bbbbb") == "bbbbb", "bbbbb")
+
+		fmt.Println(handle.LongestPalindrome("abcda") == "a", "abcda")
+		fmt.Println(handle.LongestPalindrome("babad") == "bab", "babad")
+
+		fmt.Println(handle.LongestPalindrome("cbbd") == "bb", "cbbd")
+
+		fmt.Println(handle.LongestPalindrome("abacab") == "bacab", "abacad")
+		fmt.Println(handle.LongestPalindrome("aba") == "aba", "aba")
+		*/
+		//fmt.Println(handle.LongestPalindrome("abcba") == "abcba", "abcba")
+
+		var fn = func(s, as string) {
+			fmt.Println("test", s, handle.LongestPalindrome(s) == as)
+		}
+
+		fn("bbbbb", "bbbbb")
+		fn("abcda", "a")
+		fn("babad", "bab")
+		fn("cbbd", "bb")
+		fn("abacab", "bacab")
+		fn("aba", "aba")
+
+		fn("abcba", "abcba")
+		fn("babadada", "adada")
 	}
+
 }
