@@ -166,6 +166,14 @@ func main() {
 		fmt.Println(handle.IntToRoman(58) == "LVIII")
 		fmt.Println(handle.IntToRoman(1994) == "MCMXCIV")
 		fmt.Println(handle.IntToRoman(101) == "CI")
+	case "13":
+		fmt.Println(handle.RomanToInt("MCMXCIV"))
+		fmt.Println(handle.RomanToInt("LVIII"))
+	case "14":
+		fmt.Println(handle.LongestCommonPrefix([]string{"aa", "aab", "aa"}))
+
+		fmt.Println(handle.LongestCommonPrefix([]string{"flower", "flow", "flight"}))
+		fmt.Println(handle.LongestCommonPrefix([]string{"a"}))
 	}
 
 }
